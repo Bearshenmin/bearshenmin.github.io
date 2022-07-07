@@ -1,2 +1,2 @@
 # bearshenmin.github.io
-Github page
+my Github page
