@@ -16,5 +16,15 @@
 <iframe src="https://scratch.mit.edu/projects/757075427/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 <h4>簡報</h4></br>
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRMDE-ZwpZd1A63ef-qagbGyPQ2Xxctkn-qleXdcalD6KkDynGsKRirGtLOrwZPskk6Z9f4WgA39jWr/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<script>if (!('Notification' in window)) {
+  console.log('This browser does not support notification');
+}
+if (Notification.permission === 'default' || Notification.permission === 'undefined') {
+  Notification.requestPermission(function(permission) {
+    // permission 可為「granted」（同意）、「denied」（拒絕）和「default」（未授權）
+    // 在這裡可針對使用者的授權做處理
+  });
+}
+</script>
 </body>
 </html>
