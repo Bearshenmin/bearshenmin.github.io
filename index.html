@@ -1,0 +1,15 @@
+<form>
+  <label>密碼：<input type="password" id="password"></label>
+  <input type="button" value="提交" onclick="checkPassword()">
+</form>
+
+<script>
+  function checkPassword() {
+    var password = document.getElementById("password").value;
+    if (password == "5487") {
+      window.location.href = "view.html";
+    } else {
+      alert("密碼錯誤，請重新輸入");
+    }
+  }
+</script>
