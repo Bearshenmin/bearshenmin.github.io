@@ -1,0 +1,30 @@
+<button id="start-btn">開始錄音</button>
+<button id="stop-btn">停止錄音</button>
+
+<script>
+  var startBtn = document.getElementById("start-btn");
+  var stopBtn = document.getElementById("stop-btn");
+  var audioStream;
+
+  startBtn.addEventListener("click", function() {
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        audioStream = stream;
+        startBtn.disabled = true;
+        stopBtn.disabled = false;
+        console.log("錄音已開始");
+      })
+      .catch(function(error) {
+        console.error("無法訪問麥克風：" + error);
+      });
+  });
+
+  stopBtn.addEventListener("click", function() {
+    audioStream.getTracks().forEach(function(track) {
+      track.stop();
+    });
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    console.log("錄音已停止");
+  });
+</script>
