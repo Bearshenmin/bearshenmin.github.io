@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>登入帳號-TeddyBear</title>
+    </head>
+    <body>
+        <form class="login">
+            <h1>Login 登入帳號</h1>
+            <input type="text" placeholder="Username 帳號" />
+            <input type="password" placeholder="Password 密碼" />
+            <input type="submit" value="Submit 完成" onclick="checkPassword()" />
+        </form>
+        <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var user = document.getElementById("text").value
+            if (user == "bearshen1019" && password == "D123606700") {
+              window.location.href = "https://bearshenmin.github.io/dino%20code.html";
+            } else {
+              alert("密碼錯誤，請重新輸入");
+            }
+          }
+          </script>
+    </body>
+</html>
