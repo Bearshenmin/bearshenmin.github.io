@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <link rel="icon" type="image/x-icon" href="ico.ico">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>google小恐龍外掛</title>
+    <title>Google Dino hacker-TeddyBear</title>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="38f3548f-672d-49d8-b1a4-06b838d98a77";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 <body>
     <h1>自動外掛：</h1><code>function TrexRunnerBot(){function f(){Runner().onKeyDown(d);setTimeout(function(){Runner().onKeyUp(d)},500)}var b=function(a){return{keyCode:a,preventDefault:function(){}}},c=b(38),d=b(40),e=b(32);Runner().playing||(Runner().onKeyDown(e),setTimeout(function(){Runner().onKeyUp(e)},500));return{conquerTheGame:function(){if(Runner&&Runner().horizon.obstacles[0]){var a=Runner().horizon.obstacles[0];if((!a.typeConfig||"SNACK"!==a.typeConfig.type)&&50!==a.yPos&&a.xPos<=18*Runner().currentSpeed)if(50=== a.yPos)f();else{var b=Runner().horizon.obstacles[1];if(b&&b.xPos-a.xPos<=42*Runner().currentSpeed)Runner().onKeyDown(c),Runner().onKeyUp(c);else Runner().onKeyDown(c)}}}}}var bot=TrexRunnerBot(),botInterval=setInterval(bot.conquerTheGame,2);</code></br>
