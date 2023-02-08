@@ -1,30 +1,30 @@
 <html>
     <head>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="style.css" />
         <title>登入帳號-TeddyBear</title>
     </head>
     <body>
         <form class="login">
-            <h1>Login 登入帳號</h1>
-            <input type="text" placeholder="Username" id="Username" />
+            <h1>Login 登入管理員帳號</h1>
             <input type="password" placeholder="Password" id="Password" />
             <input type="submit" value="Submit" onclick="checkPassword()" />
         </form>
 
 
         <script>
-        function checkPassword() {
-          alert("debug point(checkpasswd)");
+          function checkPassword() {
+            console.log("debug point(checkpasswd)");
             var password = document.getElementById("Password").value;
-            var user = document.getElementById("Username").value;
-            if (user == "bearshen1019" && password == "1019") {
-              alert("debug point(check name passwd)");
-              window.location.href = "https://bearshenmin.github.io/dino%20code.html";
-              alert("debug point(open url)")
-            } else {
-              alert("帳號或密碼錯誤，請重新輸入");
-            }
+            if (password == "1019") {
+             console.log("debug point(check passwd)");
+             window.location.href = "https://bearshenmin.github.io/dino%20code.html";
+             console.log("debug point(open url)");}
+             else {
+              alert("密碼錯誤,請重新輸入")
+             }
           }
-          </script>
+        </script>
+        
     </body>
 </html>
