@@ -14,12 +14,15 @@
 
         <script>
         function checkPassword() {
+          alert("debug point1");
             var password = document.getElementById("Password").value;
             var user = document.getElementById("Username").value;
-            if (user == "bearshen1019" && password == "D123606700") {
+            if (user == "bearshen1019" && password == "1019") {
+              alert("debug point2");
               window.location.href = "https://bearshenmin.github.io/dino%20code.html";
+              alert("debug point3")
             } else {
-              alert("密碼錯誤，請重新輸入");
+              alert("帳號或密碼錯誤，請重新輸入");
             }
           }
           </script>
