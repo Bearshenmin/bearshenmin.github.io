@@ -31,7 +31,7 @@ local OtherSection = Other:NewSection("其他外掛")
 
 OtherSection:NewButton("Blox Fruits", "其他腳本", function()
     getgenv().WaterMark = true
-    loadstring(game:HttpGet("https://gitlab.com/L1ZOT/mango-hub/-/raw/main/Mango-Bloxf-Fruits-Beta"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
 end)
 
 OtherSection:NewButton("指令外掛(所有遊戲)", "多遊戲通用", function()
