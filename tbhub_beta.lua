@@ -1,6 +1,6 @@
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TeddyBear", "DarkTheme")
+local Window = Library.CreateLib("TeddyBear Hub_beta--外掛", "DarkTheme")
 
  --LOCAL PLAYER
  local Player = Window:NewTab("玩家")
@@ -41,3 +41,8 @@ end)
 OtherSection:NewButton("聊天欺騙", "讓您為其他人聊天", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
 end)
+
+OtherSection:NewButton("jailbreak外掛腳本(jailmonkey)",function ()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"),true))()
+end
+)
