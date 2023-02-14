@@ -1,4 +1,4 @@
-**[website page](https://bearshenmin.github.io/))**
+**[website page](https://bearshenmin.github.io/)**
 
 # 外掛腳本
 ```
