@@ -1,5 +1,4 @@
-# bearshenmin.github.io
-my Github page
+github page(https://bearshenmin.github.io/)
 
 # 外掛腳本
 ```
