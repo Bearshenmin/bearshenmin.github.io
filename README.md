@@ -1,4 +1,4 @@
-**[website page]([[https://github.com/cairoshell/cairoshell/releases](https://bearshenmin.github.io/)](https://bearshenmin.github.io/))**
+**[website page](https://bearshenmin.github.io/))**
 
 # 外掛腳本
 ```
