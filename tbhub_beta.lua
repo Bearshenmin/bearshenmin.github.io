@@ -44,5 +44,4 @@ end)
 
 OtherSection:NewButton("jailbreak外掛腳本(jailmonkey)",function ()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"),true))()
-end
-)
+end)
