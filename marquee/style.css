@@ -1,0 +1,25 @@
+.marquee {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    border: 10px solid #ccc;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
