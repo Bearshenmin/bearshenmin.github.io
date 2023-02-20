@@ -46,6 +46,7 @@ OtherSection:NewButton("jailbreak", "其他腳本", function ()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"),true))()
 end)
 
---關於的頁面
-local Other = Window:NewTab("關於(製作中)")
-local OtherSection = Other:NewSection("關於(製作中)")
+OtherSection:NewButton("造船尋寶刷錢", "其他腳本", function ()
+    loadstring(game:HttpGet(("https://bearshenmin.github.io/roblox%20hacker/boat.lua"),true))()
+end)
+
