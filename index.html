@@ -3,9 +3,30 @@
   <title>首頁-TeddyBear</title>
 </head>
 
-<div class="home-video-wrapper">    
-	<div class="video-wrapper"><iframe id="ytplayer" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" width="640" height="360" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&amp;autohide=0&amp;cc_load_policy=0&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdaptoper.com&amp;widgetid=1"></iframe></div>
-  </div></br>
+<video id="myVideo" src="video.mp4">
+  Your browser does not support the video tag.
+</video></br>
+
+<button class="playPause" onclick="playPause()">神奇按鈕(按我)</button>
+
+<script>
+function playPause() {
+  var video = document.getElementById("myVideo");
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+</script>
+
+<style>
+.playpause {
+  font-size: 50px;
+  padding: 10px 50px;
+}
+</style>
+
 </br>
 <b>外掛</b></br>
 
