@@ -7,4 +7,5 @@
 loadstring(game:HttpGet("https://bearshenmin.github.io/tbhub_beta.lua"))()
 ```
 **[krnl外掛啟動器下載](https://krnl.place/)**
+
 **[天ㄚ外掛啟動器下載](https://www.youtube.com/watch?v=pZ2W26mehj4&ab_channel=%E5%A4%A9%E3%84%9A)**
