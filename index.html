@@ -65,6 +65,10 @@ function playPause() {
   function checkPassword() {
     var password = document.getElementById("password").value;
     if (password == "5487") {
+      var notification3 = new Notification("????????????", {
+  body: "你怎麼知道密碼???",
+  icon: "ico.ico",
+});
       window.location.href = "https://bearshenmin.github.io/dino%20code.html";
     } else {
       alert("密碼錯誤，請重新輸入");
