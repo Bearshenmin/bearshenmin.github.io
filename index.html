@@ -3,6 +3,25 @@
   <title>首頁-TeddyBear</title>
 </head>
 
+<script>
+  if ("Notification" in window) {
+  // 支援 Notification API
+} else {
+  // 不支援 Notification API
+}
+
+Notification.requestPermission().then(function(permission) {
+  if (permission === "granted") {
+    // 使用者已授權網站發送通知
+  }
+});
+
+var notification = new Notification("歡迎來到TeddyBear的網站", {
+  body: "歡迎來到TeddyBear的網站，祝你參觀愉快",
+  icon: "ico.ico",
+});
+
+</script>
 <video id="myVideo" src="video.mp4">
   Your browser does not support the video tag.
 </video></br>
