@@ -1,113 +1,66 @@
-<head>
-  <link rel="icon" type="image/x-icon" href="ico.ico">
-  <title>首頁-TeddyBear</title>
-  <link rel="stylesheet" href="style.css">
-  </script>
-</head>
+<head>    <meta http-equiv="refresh" content="3;url=https://bearshenmin.github.io/index2.html" /></head>
 
+<body>
+    <div class="center">
+       <div class="ring"></div>
+       <span><b>載入中...</b></span>
+    </div>
+ </body>
 
-
-<script>
-  if ("Notification" in window) {
-  // 支援 Notification API
-} else {
-  // 不支援 Notification API
-}
-
-Notification.requestPermission().then(function(permission) {
-  if (permission === "granted") {
-    // 使用者已授權網站發送通知
+<style>body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: black;
   }
-});
-
-var notification = new Notification("歡迎來到TeddyBear的網站", {
-  body: "歡迎來到TeddyBear的網站，祝你參觀愉快",
-  icon: "ico.ico",
-});
-
-
-</script>
-<video id="myVideo" src="video.mp4">
-  Your browser does not support the video tag.
-</video></br>
-
-<button class="playPause" onclick="playPause()">神奇按鈕(按我)</button>
-
-<script>
-function playPause() {
-  var notification2 = new Notification("恭喜你解鎖了新成就", {
-  body: "你解鎖了新成就，rickroll!!",
-  icon: "https://cdn.vox-cdn.com/thumbor/WR9hE8wvdM4hfHysXitls9_bCZI=/0x0:1192x795/1400x1400/filters:focal(596x398:597x399)/cdn.vox-cdn.com/uploads/chorus_asset/file/22312759/rickroll_4k.jpg",
-});
-  var video = document.getElementById("myVideo");
-  if (video.paused) {
-    video.play();
-  } else {
-    video.pause();
+  .center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
-}
-</script>
-
-<style>
-.playpause {
-  font-size: 50px;
-  padding: 10px 50px;
-  background-color: #00a2ff;
-  cursor: pointer;
-  color: red;
-}
-</style>
-
-</br>
-<b>外掛</b></br>
-
-<form>
-  <label>dino code密碼(密碼打完按提交，不要按ENTER鍵)：<input type="password" id="password"></label>
-  <input type="button" value="提交" onclick="checkPassword()">
-</form>
-
-<script>
-  function checkPassword() {
-    var password = document.getElementById("password").value;
-    if (password == "5487") {
-      var notification3 = new Notification("????????????", {
-  body: "你怎麼知道密碼???",
-  icon: "ico",
-});
-      window.location.href = "https://bearshenmin.github.io/dino%20code.html";
-    } else {
-      alert("密碼錯誤，請重新輸入");
+  .ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+  }
+  @keyframes ring {
+    0%{
+      transform: rotate(0deg);
+      box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+      transform: rotate(180deg);
+      box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+      transform: rotate(360deg);
+      box-shadow: 1px 5px 2px #0456c8;
     }
   }
-
-</script>
-
-<a href="https://bearshenmin.github.io/%E8%85%B3%E6%9C%AC.txt" target="_blank">Roblox 自製外掛--TeddyBearHub_beta(腳本檔案)</a></br>
-<a href="https://github.com/Bearshenmin/bearshenmin.github.io/blob/main/README.md" target="_blank">外掛使用說明(注入器下載)</a></br>
-</br>
-</br>
-<b>關於我</b></br>
-</br>
-<a href="https://bearshenmin.github.io/card.html"target="_blank">電子名片</a></br>
-</br>
-<b>GitHub Project</b></br>
-</br>
-<a href="https://github.com/Bearshenmin/bearshenmin.github.io"target="_blank">網頁專案</a></br>
-</br>
-<b>小工具</b></br>
-</br>
-<a href="weather/"target="_blank">查詢天氣</a></br>
-</br>
-
-</br>
-<a href="battery/"target="_blank">查詢電量</a></br>
-</br>
-</br>
-<a href="marquee/"target="_blank">跑馬燈</a></br>
-</br>
-</br>
-<a href="https://bearshenmin.github.io/sound.html"target="_blank">麥克風(未完成)</a></br>
-</br>
-<b>小遊戲</b></br>
-</br>
-<a href="click/">點擊遊戲</a>
+  .ring:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+  }
+  span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+  }
+  @keyframes text {
+    50%{
+      color: black;
+    }
+  }</style>
