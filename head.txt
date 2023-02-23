@@ -3,3 +3,58 @@
   <title>home-TeddyBear</title>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="38f3548f-672d-49d8-b1a4-06b838d98a77";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>網頁標題</title>
+  <style>
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>這是頁首標題</h1>
+    <nav>
+      <ul>
+        <li><a href="#">連結1</a></li>
+        <li><a href="#">連結2</a></li>
+        <li><a href="#">連結3</a></li>
+      </ul>
+      <form>
+        <input type="text" placeholder="搜尋...">
+        <button type="submit">搜尋</button>
+      </form>
+    </nav>
+  </header>
+  <main>
+    <p>這是頁面內容</p>
+  </main>
+</body>
+</html>
