@@ -4,6 +4,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+  // 檢查用戶代理是否為手機
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    alert("對不起，您不能訪問這個網站。");
+    // 禁止瀏覽
+    window.location = "about:blank";
+  }
+</script>
 
 <h1><a href="https://bearshenmin.github.io/index2.html" >TeddyBear的網站</a></h1>
 
