@@ -1,6 +1,6 @@
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TeddyBear Hub_beta--外掛(V0.3)", "DarkTheme")
+local Window = Library.CreateLib("TeddyBear Hub_beta--外掛(V0.3)", "GrapeTheme")
 
  --LOCAL PLAYER
  local Player = Window:NewTab("玩家")
