@@ -14,7 +14,7 @@ local Window = Library.CreateLib("TeddyBear Hub_beta--外掛(V0.3)", "GrapeTheme
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
  end)
 
- PlayerSection:NewButton("重製 速度/跳", "恢復原本", function()
+ PlayerSection:NewButton("重置 速度/跳", "恢復原本", function()
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
  end)
