@@ -1,6 +1,6 @@
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TeddyBear Hub_beta--外掛(V0.3)", "GrapeTheme")
+local Window = Library.CreateLib("TeddyBear Hub--外掛(V1.0)", "GrapeTheme")
 
  --LOCAL PLAYER
  local Player = Window:NewTab("常用功能")
@@ -52,9 +52,10 @@ end)
 
 local Other = Window:NewTab("關於")
 local OtherSection = Other:NewSection("關於")
-local OtherSection = Other:NewSection("TeddyBear Hub_beta")
-local OtherSection = Other:NewSection("版本:0.3(全新改版)")
+local OtherSection = Other:NewSection("TeddyBear Hub")
+local OtherSection = Other:NewSection("版本:1.0(升級成正式版)")
+local OtherSection = Other:NewSection("經過一段時間的測試，已升級成第1版")
 local OtherSection = Other:NewSection("copyright: TeddyBear2023")
 local OtherSection = Other:NewSection("https://bearshenmin.github.io")
 local OtherSection = Other:NewSection("yt頻道:雞排飯好吃(https://youtube.com/@bearshen1019)")
-local OtherSection = Other:NewSection("感謝使用TeddyBear Hub_beta，祝你有個美好的一天")
+local OtherSection = Other:NewSection("感謝使用TeddyBear Hub，祝你有個美好的一天")
