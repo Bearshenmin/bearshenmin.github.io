@@ -3,23 +3,23 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("TeddyBear Hub_beta--外掛(V0.3)", "GrapeTheme")
 
  --LOCAL PLAYER
- local Player = Window:NewTab("玩家")
- local PlayerSection = Player:NewSection("玩家")
+ local Player = Window:NewTab("常用功能")
+ local PlayerSection = Player:NewSection("常用功能")
 
- PlayerSection:NewSlider("速度", "超級快!!", 500, 16, function(s)
+ PlayerSection:NewSlider("速度", "調整速度", 500, 16, function(s)
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
  end)
 
- PlayerSection:NewSlider("跳", "超級高!!", 350, 50, function(s)
+ PlayerSection:NewSlider("跳的力量", "調整跳的力量", 350, 50, function(s)
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
  end)
 
- PlayerSection:NewButton("重置 速度/跳", "恢復原本", function()
+ PlayerSection:NewButton("重置 速度/跳", "恢復原本的速度/跳的力量", function()
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
  end)
 
-PlayerSection :NewButton("飛", "起飛lol", function()
+PlayerSection :NewButton("飛", "起飛囉", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
 
         Fly(true)
