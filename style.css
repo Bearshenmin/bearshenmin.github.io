@@ -17,4 +17,5 @@ a {
 .white{
     color: white;
     font-size: xx-large;
+    cursor: default;
 }
