@@ -19,3 +19,8 @@ a {
     font-size: xx-large;
     cursor: default;
 }
+
+.nosrt{
+    color: red;
+    background-color: yellow;
+}
