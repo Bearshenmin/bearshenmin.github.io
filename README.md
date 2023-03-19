@@ -1,5 +1,5 @@
 # 我的網站
-**[website page](https://bearshenmin.github.io/)**
+**[按這裡前往](https://bearshenmin.github.io/)**
 
 # Roblox自製外掛腳本(TeddyBear Hub)
 請把以下程式碼貼在外掛啟動器(例如:krnl...等)
