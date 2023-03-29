@@ -1,6 +1,6 @@
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TeddyBear Hub--外掛(V1.0)", "GrapeTheme")
+local Window = Library.CreateLib("TeddyBear Hub--外掛(V1.1)", "GrapeTheme")
 
  --LOCAL PLAYER
  local Player = Window:NewTab("常用功能")
@@ -34,6 +34,11 @@ OtherSection:NewButton("Blox Fruits", "其他腳本", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
 end)
 
+OtherSection:NewButton("Blox Fruits刷寶箱", "其他腳本", function()
+    getgenv().WaterMark = true
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+end)
+
 OtherSection:NewButton("指令外掛(所有遊戲)", "多遊戲通用", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
@@ -53,10 +58,10 @@ end)
 local Other = Window:NewTab("關於")
 local OtherSection = Other:NewSection("關於")
 local OtherSection = Other:NewSection("TeddyBear Hub")
-local OtherSection = Other:NewSection("版本:1.0(升級成正式版)")
+local OtherSection = Other:NewSection("版本:1.1(升級成正式版)")
 local OtherSection = Other:NewSection("經過一段時間的測試，已升級成第1版")
 local OtherSection = Other:NewSection("copyright: TeddyBear2023")
 local OtherSection = Other:NewSection("https://bearshenmin.github.io")
 local OtherSection = Other:NewSection("yt頻道:雞排飯好吃(https://youtube.com/@bearshen1019)")
 local OtherSection = Other:NewSection("感謝使用TeddyBear Hub，祝你有個美好的一天")
-local OtherSection = Other:NewSection("上次更新:2023-3-1(台灣時間)")
+local OtherSection = Other:NewSection("上次更新:2023-3-29(GMT+8:00)")
