@@ -34,7 +34,7 @@ OtherSection:NewButton("Blox Fruits", "其他腳本", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
 end)
 
-OtherSection:NewButton("Blox Fruits刷寶箱", "其他腳本", function()
+OtherSection:NewButton("Blox Fruits刷寶箱(新)", "其他腳本", function()
     getgenv().WaterMark = true
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
 end)
