@@ -3,6 +3,7 @@
 
 <head>
 
+
     <title>RGB測試-TeddyBear</title>
     
     <!-- Montserrat Font -->
@@ -16,11 +17,36 @@
 <body>
 
 
-    <div class="box">
-        雞排飯好吃
+    <div class="box" id="text">
+        請輸入文字
     </div>
 
 </body>
 
 </html>
 
+<script>
+window.onload = function() {
+  // 取得目前網址的查詢字串
+  const queryString = window.location.search;
+
+  // 使用 URLSearchParams 物件解析查詢字串
+  const urlParams = new URLSearchParams(queryString);
+
+  // 取得文字參數的值
+  const text = urlParams.get('text');
+
+  // 取得 id 為 text 的 <div> 元素
+  const textDiv = document.getElementById('text');
+
+  if (text === null || text === "") {
+    alert("請在網址的text=後面加上你要顯示的文字。(最多可以輸入12個文字，超過的話畫面會塞不下!)")
+  } else {
+    // 否則將 <div> 元素中的文字內容改為文字參數的值
+    textDiv.textContent = text;
+  }
+
+}
+
+    
+</script>
