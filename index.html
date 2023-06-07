@@ -56,24 +56,7 @@
 
 
 
-<script>
-  if ("Notification" in window) {
-  // 支援 Notification API
-} else {
-  // 不支援 Notification API
-}
 
-Notification.requestPermission().then(function(permission) {
-  if (permission === "granted") {
-    // 使用者已授權網站發送通知
-  }
-});
-
-var notification = new Notification("歡迎來到TeddyBear的網站", {
-  body: "歡迎來到TeddyBear的網站，祝你參觀愉快",
-  icon: "ico.ico",
-});
-</script>
 
 <script>
   function closePopup() {
@@ -121,17 +104,23 @@ var notification = new Notification("歡迎來到TeddyBear的網站", {
 
 <div class="overlay">
   <div class="popup">
-    <h2>更新紀錄</h2>
-    <small>目前版本:V1.2</small>
+    <button onclick="closePopup()" class="btn btn-danger" style="float: right;">X</button>
+    <br><br><h2>更新紀錄</h2><small>目前版本:V1.3</small><hr>
+
     <p>
+      V1.3<br>
+      +改善更新紀錄的UI<br>
+      +改善效能
+      <hr>
+      V1.2<br>
       +新增更新日誌頁面<br>
       +新增神秘文字<br>
       +頁尾<br>
       -網頁載入畫面<br>
     </p>
-    <button onclick="closePopup()" class="btn btn-primary">關閉</button>
   </div>
 </div>
+
 
 <br>
 <br>
@@ -140,15 +129,10 @@ var notification = new Notification("歡迎來到TeddyBear的網站", {
 <b>Roblox外掛</b></br>
 
 
-
 <script>
   function checkPassword() {
     var password = document.getElementById("password").value;
     if (password == "5487") {
-      var notification3 = new Notification("????????????", {
-  body: "你怎麼知道密碼???",
-  icon: "ico",
-});
       window.location.href = "https://drive.google.com/file/d/1tTyL7NA0wi6gWCMDPf4eoIMlOtNPwMhb/view?usp=sharing";
     } else {
       alert("密碼錯誤，請重新輸入");
