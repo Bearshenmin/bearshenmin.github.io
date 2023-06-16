@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IP位置查詢</title>
+  <script>
+    function getIP() {
+        document.getElementById("ipAddress").textContent = "正在載入...";
+      // 使用AJAX向IP查詢服務發送請求
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://api.ipify.org?format=json", true);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          var ip = response.ip;
+          document.getElementById("ipAddress").textContent = ip;
+        }
+      };
+
+      xhr.send();
+    }
+    
+    function refreshIP() {
+      getIP(); // 重新載入IP位置
+    }
+  </script>
+</head>
+<body onload="getIP()">
+  <h1>IP查詢</h1>
+  <p style="color: red; font-size: xx-large;" id="ipAddress">正在載入...</p>
+  
+  <button onclick="refreshIP()" >重新整理</button>
+</body>
+</html>
