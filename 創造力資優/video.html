@@ -10,20 +10,14 @@
     <script>
         function checkPassword() {
             document.getElementById("text").textContent = "驗證密碼中...";
-            fetch('https://script.google.com/macros/s/AKfycbw3P20YJo_24zQEyWuda7FokfkrcTmErIfo_Wk-_WLW0qo7NiOWZPNpZNlfv4sB_slU/exec')
-  .then(response => response.text())
-  .then(data => {
-    var text = data.trim();
-    console.log(text);
-    if (password === text) {
+    if (password === 1019) {
                 var url = "https://yura.teracloud.jp/v2/dav/111%e5%89%b5%e9%80%a0%e5%8a%9b%e8%b3%87%e5%84%aa%20%e4%bf%ae%e6%94%b92_yt%e7%89%88.mp4";
                 window.location.href = url;
             } else {
                 alert("密碼錯誤，無法打開網址。");
                 document.getElementById("text").textContent = "111學年度創造力資優發表-影片檢查系統";
             }
-  })
-  .catch(error => console.log(error));}
+  }
     </script>
 </body>
 </html>
