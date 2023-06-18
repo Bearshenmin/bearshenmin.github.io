@@ -4,20 +4,31 @@
     <title>111學年度創造力資優發表-影片檢查系統</title>
 </head>
 <body>
-    <h1 id="text">111學年度創造力資優發表-影片檢查系統</h1>
+    
     <input type="password" id="passwordInput" placeholder="請輸入觀看密碼">
     <button onclick="checkPassword()">確認</button>
-
     <script>
         function checkPassword() {
             document.getElementById("text").textContent = "驗證密碼中...";
-            var password = document.getElementById("passwordInput").value;
-            var expectedPassword = "https://script.googleusercontent.com/macros/echo?user_content_key=-ShkgiCOzj1h9tDoULmc5bj3Qe1nz2K37oSiIcFj1UB_NKcPYg1-DeJ5rzyodn8S0dJbCoK8POyD70Qac1FW0H2fIVT2GBhrm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHd4T-Qmue3ry9F7N-XyMHrIX9SgctmZAv8KuzuQmenchhjCzsftwphipXapDAci1Yn13ttkGI-vI8fxwJugUmKeRBvVSV3QwQ&lib=Mv1HQ4T-V5w0igMHRNSjxgbFSwZrFpnJA";
+            fetch('https://script.google.com/macros/s/AKfycbw3P20YJo_24zQEyWuda7FokfkrcTmErIfo_Wk-_WLW0qo7NiOWZPNpZNlfv4sB_slU/exec')
+  .then(response => response.text())
+  .then(data => {
+    var text = data.trim();
+    console.log(text);
+    if (password === text) {
+                var url = "https://yura.teracloud.jp/v2/dav/111%e5%89%b5%e9%80%a0%e5%8a%9b%e8%b3%87%e5%84%aa%20%e4%bf%ae%e6%94%b92_yt%e7%89%88.mp4";
+                window.location.href = url;
+            } else {
+                alert("密碼錯誤，無法打開網址。");
+            }
+  })
+  .catch(error => console.log(error));
             
             if (password === expectedPassword) {
                 window.location.href = expectedPassword;
             } else {
                 alert("密碼錯誤，無法前往網頁。");
+                document.getElementById("text").textContent = "111學年度創造力資優發表-影片檢查系統";
             }
         }
     </script>
