@@ -4,7 +4,7 @@
     <title>111學年度創造力資優發表-影片檢查系統</title>
 </head>
 <body>
-    
+    <h1 id="text">111學年度創造力資優發表-影片檢查系統</h1>
     <input type="password" id="passwordInput" placeholder="請輸入觀看密碼">
     <button onclick="checkPassword()">確認</button>
     <script>
@@ -20,17 +20,10 @@
                 window.location.href = url;
             } else {
                 alert("密碼錯誤，無法打開網址。");
-            }
-  })
-  .catch(error => console.log(error));
-            
-            if (password === expectedPassword) {
-                window.location.href = expectedPassword;
-            } else {
-                alert("密碼錯誤，無法前往網頁。");
                 document.getElementById("text").textContent = "111學年度創造力資優發表-影片檢查系統";
             }
-        }
+  })
+  .catch(error => console.log(error));}
     </script>
 </body>
 </html>
