@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>111學年度創造力資優發表-影片檢查系統</title>
+</head>
+<body>
+    <h1>111學年度創造力資優發表-影片檢查系統</h1>
+    <input type="password" id="passwordInput" placeholder="請輸入觀看密碼">
+    <button onclick="checkPassword()">送出</button>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordInput").value;
+            if (password === "1019") {
+                var url = "https://yura.teracloud.jp/v2/dav/111%e5%89%b5%e9%80%a0%e5%8a%9b%e8%b3%87%e5%84%aa%20%e4%bf%ae%e6%94%b92_yt%e7%89%88.mp4";
+                window.location.href = url;
+            } else {
+                alert("密碼錯誤，無法打開網址。");
+            }
+        }
+    </script>
+</body>
+</html>
