@@ -8,9 +8,12 @@ body {
     width: 400px;
     height: 200px;
     margin-bottom: 10px;
+    font-size: large;
   }
   
   #word-count {
     font-weight: bold;
+    font-size: xx-large;
+    color: blue;
   }
   
