@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  textarea {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  #word-count {
+    font-weight: bold;
+  }
+  
