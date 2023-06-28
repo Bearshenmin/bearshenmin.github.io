@@ -10,8 +10,6 @@ function updateWordCount() {
 }
 
 function countWords(text) {
-  const chineseCharacters = text.replace(/[^\u4e00-\u9fa5]/g, '');
-  const englishWords = text.match(/\b[a-zA-Z]+\b/g) || [];
-  const numbers = text.match(/\d+/g) || [];
-  return chineseCharacters.length + englishWords.length + numbers.length;
+  const matches = text.match(/[\u4e00-\u9fa5a-zA-Z0-9\s\p{P}]/gu) || [];
+  return matches.length;
 }
