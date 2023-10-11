@@ -13,6 +13,8 @@
 <meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFWMQWTGDP"></script>
+<!---sweetalert2-->>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -74,72 +76,48 @@
 
 
 
-
 <script>
-  function closePopup() {
-    document.querySelector('.overlay').style.display = 'none';
+window.onload = function() {
+  const showAlert = () => {
+      Swal.fire({
+          icon: 'success',
+          title: '歡迎你來到雞排飯好吃的網頁',
+          html: '歡迎你來到雞排飯好吃的網頁，記得訂閱我。<br>也歡迎加入的Discord伺服器喔!<br><br><a href="https://www.youtube.com/@ChickenChopRiceGood?sub_confirmation=1">訂閱我YouTube<br></a><a href="https://discord.gg/Kh8PvCgZzA">Discord伺服器</a>',
+      });
   }
-  
-  window.onload = function() {
-    // 检查本地存储，看是否已经显示过更新日志
-    var hasShownPopup = localStorage.getItem('hasShownPopup');
-    
-    if (!hasShownPopup) {
-      // 第一次进入网站，显示更新日志
-      document.querySelector('.overlay').style.display = 'flex';
-      
-      // 标记已经显示过更新日志
-      localStorage.setItem('hasShownPopup', 'true');
-    }
-  };
-  
+
+  showAlert(); // 呼叫 showAler 函數以顯示對話框
+};
 </script>
 
-<style>
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
 
-.popup {
-  background-color: #fff;
-  padding: 20px;
-  max-width: 400px;
-  text-align: center;
-  border-radius: 10%;
-}
 
-</style>
-
-<div class="overlay">
-  <div class="popup">
-    <button onclick="closePopup()" class="btn btn-danger" style="float: right;">X</button>
-    <br><br><h2>更新紀錄</h2><small>目前版本:V1.7</small><hr>
-
-    <p>
-      V1.7<br>
-      +字數計算器<br>
-      <hr>
-    </p>
+<br>
+<br>
+<br>
+<br>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://www.roblox.com/games/12703679272/unnamed">
+      <img src="game-ads.png" class="d-block w-100" alt="...">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a a href="https://youtube.com/@HLs-YT">
+      <img src="hls-ads.jpeg" class="d-block w-100" alt="...">
+    </a>
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-
-<br>
-<br>
-<br>
-<br>
-小廣告<br>
-<a class="navbar-brand" href="https://youtube.com/@HLs-YT"><img src="hls-ads.jpeg" style="width:400px;height:200px;"></a>
-<br>
 <b>Roblox外掛</b></br>
 
 
@@ -186,6 +164,8 @@
 <b class="white">恭喜你發現彩蛋!</b>
 <!--引用bootstrap-javascript-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<!--sweet-alert-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
 <form>
   <label>???????????(密碼打完按提交，不要按ENTER鍵)：<input type="password" id="password"></label>
