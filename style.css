@@ -16,7 +16,20 @@ a {
 
 .white{
     color: white;
+}
+.black{
+    color: rgb(0, 0, 0);
     font-size: xx-large;
     cursor: default;
 }
+.navbar-light .navbar-nav .nav-item .nav-link {
 
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .navbar-nav > .active > .a {
+  
+    color: rgb(122, 122, 122)(255, 255, 255);
+  
+  }
