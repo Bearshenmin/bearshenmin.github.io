@@ -1,4 +1,4 @@
-# 我的網站
+# 我的網站 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/14y6k.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 **[按這裡前往](https://bearshenmin.github.io/)**
 
 # Roblox自製外掛腳本(TeddyBear Hub)
